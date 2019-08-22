@@ -8,9 +8,9 @@ export default function BookList() {
     return books.length ? (
         <div className='book-list'>
             <ul>
-                { books.map(book => {
+                {books.map((book) => {
                     return ( <BookDetails book={ book } key={ book.id } /> )
-                }) }
+                })}
             </ul>
         </div>
     ) : (
